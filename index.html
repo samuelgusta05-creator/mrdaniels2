@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Agende seu corte na Mr Daniel's Barbearia.">
+  <title>Mr Daniel's | Barbearia & Estilo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="logo"><i>MD</i></span><span><b>MR DANIEL'S</b><small>BARBEARIA & ESTILO</small></span></a>
+    <nav><a href="#agendar">Agendar</a><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a></nav>
+    <a class="top-cta" href="#agendar">Reservar horário</a>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="kicker">MR DANIEL'S · DESDE 2018</p>
+        <h1>Seu estilo.<br><em>Seu horário.</em></h1>
+        <p class="intro">Escolha seu barbeiro, o serviço e o melhor momento. Sem espera, sem complicação.</p>
+        <div class="actions"><a class="button" href="#agendar">Agendar agora <span>→</span></a><p class="proof"><b>+2.400</b><span>clientes bem cuidados</span></p></div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div class="rings"></div><div class="cube cube-a"></div><div class="cube cube-b"></div>
+        <div class="open-card"><div class="pole"><i></i></div><div><small>ABERTO HOJE</small><b>Até às 20h</b><p>Próximo horário <strong>10:00</strong></p></div><span>✂</span></div>
+      </div>
+    </section>
+
+    <section class="booking" id="agendar">
+      <header class="section-head"><div><p class="kicker">RESERVE SEU HORÁRIO</p><h2>Agende em poucos passos</h2></div><div class="steps"><span>1</span><span>2</span><span>3</span></div></header>
+      <form class="booking-grid" action="mailto:contato@mrdaniels.com.br" method="post" enctype="text/plain">
+        <div class="stack">
+          <fieldset class="panel" id="equipe">
+            <legend><i>01</i><span><b>Escolha seu barbeiro</b><small>Cada profissional, um estilo único.</small></span></legend>
+            <div class="barbers">
+              <label><input type="radio" name="barbeiro" value="Daniel" checked><span class="avatar clay">DN</span><b>Daniel</b><small>Cortes clássicos</small></label>
+              <label><input type="radio" name="barbeiro" value="Tg"><span class="avatar sage">TG</span><b>Tg</b><small>Degradê · Navalhado</small></label>
+              <label><input type="radio" name="barbeiro" value="João"><span class="avatar violet">JO</span><b>João</b><small>Barba · Visagismo</small></label>
+              <label><input type="radio" name="barbeiro" value="Fragoso"><span class="avatar coral">FR</span><b>Fragoso</b><small>Cortes modernos</small></label>
+              <label><input type="radio" name="barbeiro" value="Rodney"><span class="avatar blue">RD</span><b>Rodney</b><small>Clássicos · Acabamento</small></label>
+            </div>
+          </fieldset>
+          <fieldset class="panel" id="servicos">
+            <legend><i>02</i><span><b>Selecione o serviço</b><small>Preços transparentes, cuidado completo.</small></span></legend>
+            <div class="services">
+              <label><input type="radio" name="servico" value="Corte" checked><span><b>Corte</b><small>45 min</small></span><strong>R$ 45</strong></label>
+              <label><input type="radio" name="servico" value="Barba"><span><b>Barba</b><small>30 min</small></span><strong>R$ 35</strong></label>
+              <label><input type="radio" name="servico" value="Corte + barba"><span><b>Corte + barba</b><small>1h 15 min</small></span><strong>R$ 75</strong></label>
+              <label><input type="radio" name="servico" value="Corte infantil"><span><b>Corte infantil</b><small>40 min</small></span><strong>R$ 40</strong></label>
+            </div>
+          </fieldset>
+        </div>
+        <aside class="panel schedule">
+          <div class="panel-title"><i>03</i><span><b>Data e horário</b><small>Escolha sua preferência</small></span></div>
+          <label class="field">Data<input type="date" name="data" required></label>
+          <p class="available"><span></span> Horários disponíveis</p>
+          <div class="times">
+            <label><input type="radio" name="horario" value="09:00"><span>09:00</span></label><label><input type="radio" name="horario" value="10:00" checked><span>10:00</span></label><label><input type="radio" name="horario" value="11:30"><span>11:30</span></label><label><input type="radio" name="horario" value="13:30"><span>13:30</span></label><label><input type="radio" name="horario" value="15:00"><span>15:00</span></label><label><input type="radio" name="horario" value="16:30"><span>16:30</span></label><label><input type="radio" name="horario" value="18:00"><span>18:00</span></label>
+          </div>
+          <label class="field">Seu nome<input type="text" name="nome" placeholder="Como podemos te chamar?" required></label>
+          <label class="field">WhatsApp<input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required></label>
+          <button class="button full" type="submit">Solicitar agendamento <span>→</span></button>
+          <p class="note">A confirmação será feita pela equipe.</p>
+        </aside>
+      </form>
+    </section>
+
+    <section class="benefits">
+      <article><span>01</span><i class="shape diamond"></i><h3>Sem fila</h3><p>Seu horário reservado e confirmado com antecedência.</p></article>
+      <article><span>02</span><i class="shape sphere"></i><h3>Lembretes</h3><p>Você recebe os detalhes antes do corte.</p></article>
+      <article><span>03</span><i class="shape cylinder"></i><h3>Seu barbeiro</h3><p>Escolha quem já conhece o seu estilo.</p></article>
+    </section>
+  </main>
+  <footer><span class="logo"><i>MD</i></span><p>© 2026 Mr Daniel's Barbearia. Feito para cuidar do seu estilo.</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+</body>
+</html>
